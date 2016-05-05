@@ -1,0 +1,7 @@
+# Difference in test target pod’s xcconfig depending on whether `inherit! :search_paths` is used:
+
+# without `inherit! :search_paths`
+OTHER_LDFLAGS = $(inherited) -framework "Alamofire" -framework "EVReflection"
+
+# with `inherit! :search_paths`
+OTHER_LDFLAGS = $(inherited) -framework "EVReflection"
